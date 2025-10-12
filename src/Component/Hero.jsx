@@ -3,7 +3,7 @@ import React from 'react';
 const Hero = () => {
     return (
         <div className='relative'>
-            <img src="../../public/house.jpg" alt="" className='h-96 w-full bg-cover' />
+          <img src="/house.jpg" alt="house" className='h-96 w-full bg-cover' />
 
 
             <div className='absolute inset-0 flex flex-col items-center md:items-start justify-end md:justify-center pb-24 md:pb-0 px-4 md:pl-18 lg:pl-24'>

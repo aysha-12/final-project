@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className="px-6 pt-8 md:px-16 lg:px-36 mt-20 w-full text-white bg-[#183153]">
             <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500 pb-10">
                 <div className="md:max-w-96">
-                    <img alt="" src="/public/logo.svg"   className='h-11 bg-white px-4 py-2 rounded-4xl ' />
+                    <img alt="logo" src="/logo.svg"   className='h-11 bg-white px-4 py-2 rounded-4xl ' />
                     <p className="mt-6 text-sm">
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </p>

@@ -32,7 +32,7 @@ const Navber = () => {
         <nav className="flex items-center justify-between py-5 px-6 md:px-16 lg:px-20 border-b border-gray-300 bg-white relative transition-all">
 
             <Link to='/' >
-                <img src="/public/logo.svg" alt="logo" />
+                <img src="/logo.svg" alt="logo" />
             </Link>
 
             {/* Desktop Menu */}
