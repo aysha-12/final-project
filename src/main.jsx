@@ -13,9 +13,9 @@ createRoot(document.getElementById('root')).render(
   <AuthProvider>
       <App />
 
-    {/* <Toaster position="bottom-right" reverseOrder={false} >
+    <Toaster position="bottom-right" reverseOrder={false} >
     
-    </Toaster> */}
+    </Toaster>
 
   </AuthProvider>
   
