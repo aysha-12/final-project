@@ -6,8 +6,8 @@ import toast from 'react-hot-toast';
 
 const Signup = () => {
   const navigate = useNavigate();
-  const location = useLocation()
-  const from = location?.state?.from?.pathname || '/product'
+  // const location = useLocation()
+  // const from = location?.state?.from?.pathname || '/product'
 
 
 
@@ -28,13 +28,14 @@ const Signup = () => {
       .then(result => {
         const users = result.user
         upDateUser(data.name)
-        console.log(users);
+        
 
         setUser(users)
 
         toast.success('Successfully create an account')
         reset()
-        navigate(from, { replace: true });
+        // navigate(from, { replace: true });
+        navigate('/')
 
       })
       .catch((error) => {
@@ -51,8 +52,9 @@ const Signup = () => {
 
         toast.success('Successfully create an account')
         reset()
+        navigate('/')
 
-        navigate(from, { replace: true });
+        // navigate(from, { replace: true });
 
       })
       .catch((error) => {
@@ -93,11 +95,11 @@ const Signup = () => {
             />
           </div>
 
-          {/* ⭐ Password with show/hide toggle */}
+          
           <div className="flex items-center mt-2 mb-8 border bg-indigo-500/5 border-gray-500/10 rounded gap-1 pl-2 relative">
             <input
               className="w-full outline-none bg-transparent py-2.5 pr-10"
-              type={showPassword ? "text" : "password"}  // ⭐ toggle type
+              type={showPassword ? "text" : "password"}  
               placeholder="Password"
               {...register("password", {
                 required: "Password is required",
@@ -107,14 +109,14 @@ const Signup = () => {
                 }
               })}
             />
-            {/* Eye Icon Button */}
+           
             <button
               type="button"
               onClick={() => setShowPassword((prev) => !prev)} // ⭐ toggle state
               className="absolute right-3 text-gray-500 hover:text-gray-700"
             >
               {showPassword ? (
-                // 👁️ Open eye icon
+                
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -136,7 +138,7 @@ const Signup = () => {
                   />
                 </svg>
               ) : (
-                // 🙈 Closed eye (slash) icon
+                
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"

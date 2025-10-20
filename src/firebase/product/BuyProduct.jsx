@@ -8,18 +8,19 @@ const BuyProduct = () => {
     const navigate = useNavigate()
 
     // const [product, setProduct] = useState([])
-    const buy = (event) => {
-        event.preventDefault()
-        const form = event.target;
-        const name = form.name.value;
-        const email = form.email.value;
-        const price = form.price.value;
-        const number = form.number.value
-        console.log(name, email, price, number);
+    const buy = () => {
+    // const buy = (event) => {
+        // event.preventDefault()
+        // const form = event.target;
+        // const name = form.name.value;
+        // const email = form.email.value;
+        // const price = form.price.value;
+        // const number = form.number.value
+        // console.log(name, email, price, number);
 
         toast.success('Successfuly booked your product')
 
-        navigate('/')
+        navigate('/product')
     }
     return (
         <div className=' px-5 md:px-8 lg:px-20 xl:px-32'>
@@ -33,10 +34,12 @@ const BuyProduct = () => {
                     </div>
                     <form action="" onSubmit={buy}>
                         <div className="flex items-center my-2 border bg-indigo-500/5 border-gray-500/10 rounded gap-1 pl-2">
-                            <input className="w-full outline-none bg-transparent py-2.5" type="text" name='name' defaultValue={user.displayName} placeholder="Enter your name" />
+                            <input className="w-full outline-none bg-transparent py-2.5" type="text" name='name' defaultValue={"aysha"} placeholder="Enter your name" />
+                            {/* <input className="w-full outline-none bg-transparent py-2.5" type="text" name='name' defaultValue={user.displayName} placeholder="Enter your name" /> */}
                         </div>
                         <div className="flex items-center my-2 border bg-indigo-500/5 border-gray-500/10 rounded gap-1 pl-2">
-                            <input className="w-full outline-none bg-transparent py-2.5" type="email" name='email' defaultValue={user.email} placeholder="Enter your Email" />
+                            <input className="w-full outline-none bg-transparent py-2.5" type="email" name='email' defaultValue={"aysha@gmail.com"} placeholder="Enter your Email" />
+                            {/* <input className="w-full outline-none bg-transparent py-2.5" type="email" name='email' defaultValue={user.email} placeholder="Enter your Email" /> */}
                         </div>
                         <div className="flex items-center my-2 border bg-indigo-500/5 border-gray-500/10 rounded gap-1 pl-2">
                             <input className="w-full outline-none bg-transparent py-2.5" type="number" name='number' placeholder="phone number" />

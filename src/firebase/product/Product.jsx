@@ -48,15 +48,15 @@ const Product = () => {
                                 <p>PostedAt: {data.postedAt}</p>
                                 <p>Year Of Use:{data.yearOfUse}</p>
 
-                                <div className='flex items-center gap-3'> <div class="relative">
-                                    <img class="h-10 w-10 rounded-full"
+                                <div className='flex items-center gap-3'> <div className="relative">
+                                    <img className="h-10 w-10 rounded-full"
                                         src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200"
                                         alt="userImage1" />
                                     {
-                                        data?.isActive ? <div class="absolute bottom-2 right-0 h-3 w-3 rounded-full bg-green-500"></div> : <div class="absolute bottom-2 right-0 h-3 w-3 rounded-full bg-gray-500"></div>
+                                        data?.isActive ? <div className="absolute bottom-2 right-0 h-3 w-3 rounded-full bg-green-500"></div> : <div className="absolute bottom-2 right-0 h-3 w-3 rounded-full bg-gray-500"></div>
                                     }
                                 </div> <div><span className='font-black text-[#26589e]'>{data.sellerName}</span>
-                                        <p class="text-sm text-gray-800">SWE 2 @ Google</p></div></div>
+                                        <p className="text-sm text-gray-800">SWE 2 @ Google</p></div></div>
 
                                 <div className="card-actions">
                                     <label htmlFor="my_modal_6" onClick={() => { setOption(data) }} className="btn bg-[#26589e] px-10 text-white">Buy Now</label>

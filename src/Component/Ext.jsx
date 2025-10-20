@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Power = () => {
     return (
         <div className='md:mt-20 mt-10'>

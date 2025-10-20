@@ -22,11 +22,9 @@ const Navber = () => {
                 toast.success('Sign-out successful.')
 
             }).catch((error) => {
-                // An error happened.
+                
             });
     }
-
-
 
     return (
         <nav className="flex items-center justify-between py-5 px-6 md:px-16 lg:px-20 border-b border-gray-300 bg-white relative transition-all">
@@ -39,7 +37,7 @@ const Navber = () => {
             <div className="hidden font-semibold sm:flex items-center gap-8">
 
                 <Link to='/'>Home</Link>
-                <Link to='/product'>Products</Link>
+                <Link to='/product'>Product</Link>
                 <Link to='/blog'>Blogs</Link>
 
                 <div className="hidden lg:flex items-center text-sm gap-2 border  px-3 rounded-full">
@@ -95,7 +93,7 @@ const Navber = () => {
             {/* Mobile Menu */}
             <div className={`${open ? 'flex' : 'hidden'} absolute z-10 top-[60px] left-0 w-full bg-white shadow-md py-4 flex-col items-start gap-2 px-5 text-sm md:hidden font-semibold `}>
                 <Link to='/'>Home</Link>
-                <Link to='/product'>Products</Link>
+                <Link to='/product'>Product</Link>
                 <Link to='/blog'>Blogs</Link>
                 {
                     user ? (<div className="dropdown dropdown-start  ">

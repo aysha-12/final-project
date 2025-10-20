@@ -8,20 +8,20 @@ const Latest = () => {
             <div className=" flex items-center gap-2 h-[400px] w-full max-w-4xl mt-10 mx-auto">
                 <div className="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
                     <img className="h-full w-full object-cover object-center"
-                       src="/Bookshelf.jpg"
+                        src="/Bookshelf.jpg"
                         alt="image" />
                 </div>
-                <div class="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
+                <div className="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
                     <img className="h-full w-full object-cover object-center"
                         src="/bookshelf2.jpg"
                         alt="image" />
                 </div>
                 <div className="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
                     <img className="h-full w-full object-cover object-center"
-                         src="/table4.jpg"
+                        src="/table4.jpg"
                         alt="image" />
                 </div>
-               
+
             </div>
 
 

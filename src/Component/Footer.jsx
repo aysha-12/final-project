@@ -3,8 +3,6 @@ import React from 'react';
 const Footer = () => {
     return (
 
-
-
         <footer className="px-6 pt-8 md:px-16 lg:px-36 mt-20 w-full text-white bg-[#183153]">
             <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500 pb-10">
                 <div className="md:max-w-96">

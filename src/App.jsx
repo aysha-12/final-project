@@ -13,7 +13,7 @@ import Share from './Page/Share/Share';
 import Signup from './Page/create-account/SignUp';
 import Login from './Page/create-account/Loging';
 import Blog from './Page/Blogs/Blog';
-import PrivateRoute from './Page/PrivateRoute/PrivateRoute';
+// import PrivateRoute from './Page/PrivateRoute/PrivateRoute';
 import DashBoard from './Page/DashBoard/DashBoard';
 
 
@@ -32,7 +32,9 @@ function App() {
         },
         {
           path: '/product',
-          element: (<PrivateRoute><Product></Product></PrivateRoute>)
+           element:<Product></Product> 
+          // element: (<PrivateRoute><Product></Product></PrivateRoute>)
+          
         },
 
         {
