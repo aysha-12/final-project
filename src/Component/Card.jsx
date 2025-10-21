@@ -36,7 +36,7 @@ const Cart = () => {
                                     <img
                                         src={data?.img}
                                         alt="beds"
-                                       className="rounded-xl h-96 md:h-60 w-full" />
+                                       className="rounded-xl h-42 md:h-60 w-full" />
                                 </figure>
                                 <div className="card-body text-sm items-center text-center">
                                     <h2 className="card-title text-[#183153]">{data.name}</h2>
@@ -68,7 +68,7 @@ const Cart = () => {
                                     <img
                                         src={data?.img}
                                         alt="beds"
-                                       className="rounded-xl h-96 md:h-60 w-full" />
+                                       className="rounded-xl h-42 md:h-60 w-full" />
                                 </figure>
                                 <div className="card-body text-sm items-center text-center">
                                     <h2 className="card-title text-[#183153]">{data.name}</h2>

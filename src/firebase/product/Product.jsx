@@ -38,7 +38,7 @@ const Product = () => {
                                 <img
                                     src={data?.img}
                                     alt="product"
-                                    className="rounded-xl h-96 md:h-60 w-full" />
+                                    className="rounded-xl h-42 md:h-60 w-full" />
                             </figure>
                             <div className="card-body px-5 text-sm ">
                                 <h2 className="card-title text-[#183153]">{data.name}</h2>
