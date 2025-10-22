@@ -1,4 +1,4 @@
-const Power = () => {
+const Ext= () => {
     return (
         <div className='md:mt-20 mt-10'>
             <section className="flex flex-col items-center justify-center mx-auto max-md:mx-2 max-md:px-2 max-w-5xl w-full text-center rounded-2xl py-20 md:py-24 bg-[url('/bookshelf2.jpg')] bg-cover bg-center bg-no-repeat">
@@ -15,4 +15,4 @@ const Power = () => {
     );
 };
 
-export default Power;
+export default Ext;
